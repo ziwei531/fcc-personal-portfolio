@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.4;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	background-color: #be3144;
+	position: fixed;
+	top: 0;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.nav-list a {
+	font-size: 1.375rem;
+	display: block;
+	padding: 8px;
+	text-align: center;
+	color: white;
+	padding: 15px 25px;
+}
+
+#navbar ul a:hover {
+	background-color: rgb(69, 86, 125);
+}
+
+main {
+	margin-top: 30px;
+}
+
+.contact-links ul li {
+	list-style-type: none;
+}
+
+.container {
+	padding: 3% 5%;
+}
+
+.welcome-container {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	background: #000000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#434343,
+		#000000
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.welcome-container h1 {
+	font-size: 3.75rem;
+}
+
+@media (max-width: 767px) {
+	.welcome-container h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.welcome-container h1 {
+		font-size: 2.5rem;
+	}
+
+	#welcome-section p {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 342px) {
+	.welcome-container h1 {
+		font-size: 2rem;
+	}
+}
+
+.welcome-container p {
+	font-size: 2rem;
+	font-style: italic;
+	color: #be3144;
+}
+
+#projects {
+	padding: 5% 5% 8% !important;
+	width: 100%;
+	padding: 5px;
+	background: #45567d;
+	color: white;
+}
+
+#projects h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 3rem;
+	padding: 3% 0 2%;
+	text-decoration: underline;
+	text-underline-offset: 15px;
+}
+
+@media (max-width: 768px) {
+	#projects h1 {
+		text-underline-offset: 4px;
+		font-size: 1.5rem;
+	}
+}
+
+.project-tile {
+	color: white;
+	max-width: 500px;
+	width: 100%;
+	margin: 5px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-tile img {
+	object-fit: cover;
+	width: 100%;
+	height: calc(100% - 6.8rem);
+}
+
+.project-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+	.project-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.project-description {
+	background-color: #303841;
+	color: white;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding: 15px;
+	text-align: center;
+}
+
+.project-description p {
+	display: inline-block;
+}
+
+.project-description span {
+	color: #303841;
+	transition: 0.3s ease-in-out;
+}
+
+.project-tile:hover span {
+	color: orange;
+}
+
+@media (max-width: 768px) {
+	.project-description {
+		font-size: 1rem;
+		padding: 5px;
+	}
+}
+
+.contact-container {
+	padding: 10% 5% !important;
+	background-color: #303841;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+}
+
+.contact-container h1 {
+	font-size: 3.75rem;
+	text-align: center;
+}
+
+.contact-container p {
+	line-height: 2;
+	font-style: italic;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.fa {
+	padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+	.contact-container h1 {
+		font-size: 2.3rem;
+	}
+
+	.contact-container p {
+		font-size: 1.1rem;
+	}
+}
+
+.contact-links {
+	margin-top: 50px;
+}
+
+.contact-links ul li a {
+	color: white;
+	font-family: Poppins;
+	font-size: 1.5rem;
+	transition: top ease 0.5s;
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
+}
+
+.contact-links ul li a:hover {
+	top: 10px;
+}
